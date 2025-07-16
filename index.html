@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Google Clone</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #header {
+            padding: 10px;
+            text-align: right;
+            font-size: 14px;
+        }
+        #search-container {
+            margin-top: 160px;
+        }
+        #search-input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 1px solid gray;
+        }
+        .search-btn {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            background-color: #eee;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+
+        <a href="image.html">Images</a> |
+        <a href="advanced.html">Advanced</a>
+    </div>
+
+    <div id="search-container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo"><br><br>
+
+        <form action="https://www.google.com/search">
+            <input id="search-input" type="text" name="q" placeholder="Type here..."><br>
+            <input class="search-btn" type="submit" value="Search">
+            <input class="search-btn" type="submit" name="btnI" value="I'm Feeling Lucky">
+        </form>
+    </div>
+</body>
+</html>

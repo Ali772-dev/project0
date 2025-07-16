@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Google Şəkil Axtarışı</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .back {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+
+    .search-box {
+      margin-top: 30px;
+    }
+
+    input[type="text"] {
+      width: 380px;
+      padding: 8px;
+      font-size: 15px;
+      border: 1px solid gray;
+      border-radius: 20px;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 8px 18px;
+      font-size: 14px;
+      background-color: #eee;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back">
+    <a href="index.html">Geri dön</a>
+  </div>
+
+  <div class="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="180" alt="Google">
+    <h2 style="color: #4285F4;">Şəkillər</h2>
+  </div>
+
+  <div class="search-box">
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Şəkil axtar...">
+      <input type="hidden" name="tbm" value="isch">
+      <br>
+      <input type="submit" value="Axtar">
+    </form>
+  </div>
+
+</body>
+</html>
